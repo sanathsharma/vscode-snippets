@@ -1,0 +1,59 @@
+{
+    "React Imports Order": {
+        "scope": "javascriptreact,typescriptreact",
+        "prefix": "r:import-order",
+        "body": [
+            "// react",
+            "// vendors",
+            "// services",
+            "// utils",
+            "// constants",
+            "// factories",
+            "// core",
+            "// redux",
+            "// ui-components",
+            "// others",
+            "// scss",
+            "// interfaces and types",
+            "// lazy"
+        ]
+    },
+    "React Functional Component": {
+        "scope": "typescriptreact",
+        "prefix": "r:fc",
+        "body": [
+            "// react",
+            "import React from 'react';",
+            "",
+            "// vendors",
+            "// services",
+            "// utils",
+            "// constants",
+            "// factories",
+            "// core",
+            "// redux",
+            "// ui-components",
+            "// others",
+            "import styles from \"./${TM_FILENAME_BASE}.module.scss\";",
+            "",
+            "// interfaces and types",
+            "// lazy",
+            "",
+            "// ----------------------------------------------------------------------------------",
+            "",
+            "interface ${TM_FILENAME_BASE}Props {}",
+            "",
+            "const ${TM_FILENAME_BASE}: React.FC<${TM_FILENAME_BASE}Props> = () => {",
+            "    return (",
+            "        <div>",
+            "            ${TM_FILENAME_BASE}",
+            "        </div>",
+            "    );",
+            "};",
+            "",
+            "// ----------------------------------------------------------------------------------",
+            "",
+            "export default ${TM_FILENAME_BASE};"
+        ]
+    }
+}
